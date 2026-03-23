@@ -1,0 +1,14 @@
+{
+  "name": "wafy-notes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter notes-backend dev\" \"pnpm --filter notes-web dev\"",
+    "build": "pnpm --filter notes-backend build && pnpm --filter notes-web build",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.7.3"
+  }
+}
