@@ -2,7 +2,7 @@ export const serviceConfig = {
   id: 'notes',
   name: 'Notes',
   icon: 'FileText',
-  path: '/notes/',
+  path: 'https://notes.wafy.life',
   color: '#F5BD02',
   description: 'Wafy Notes',
 }

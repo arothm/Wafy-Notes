@@ -10,7 +10,7 @@ initI18n()
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter basename="/notes">
+    <BrowserRouter basename="/">
       <App />
       <Toast />
     </BrowserRouter>

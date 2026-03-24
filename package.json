@@ -2,10 +2,11 @@
   "name": "wafy-notes",
   "version": "0.1.0",
   "private": true,
+  "workspaces": ["web", "backend", "mobile", "desktop"],
   "scripts": {
-    "dev": "concurrently \"pnpm --filter notes-backend dev\" \"pnpm --filter notes-web dev\"",
-    "build": "pnpm --filter notes-backend build && pnpm --filter notes-web build",
-    "typecheck": "pnpm -r run typecheck"
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w web\"",
+    "build": "npm run build -w backend && npm run build -w web",
+    "typecheck": "npm run typecheck -w backend && npm run typecheck -w web"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
